@@ -27,13 +27,17 @@ Proceed with [Monitoring Kubernetes clusters with Grafana](https://medium.com/ht
 
 - Step 0 - Create a GKE cluster (skip)
 - Step 1 - Lots and lots and lots of yaml configuration
-- Step 2 - Configure your cluster settings on Grafana (see gotchas below)
+- Step 2 - Configure your cluster settings on Grafana (skip)
+
+Instead of configuring your cluster settings on Grafana, you can simply import an existing dashboard if your monitoring tools are running on your cluster.
 
 ![[grafana dashboard 3131](https://i.imgur.com/a0tDoJT.png)](https://i.imgur.com/a0tDoJT.png)
 
 #### Use Postman to shut down a single container via the Gremlin API
 
-In the Postman app, [import the template](https://learning.getpostman.com/docs/postman/launching_postman/newbutton/#templates) called `Chaos engineering` that includes the `chaosEngineering` environment, and then look for the folder called `Shut down a container`. You will need [to update the Postman environment](https://learning.getpostman.com/docs/postman/environments_and_globals/manage_environments/#editing-an-active-environment) with your `gremlin_api_key` and `your-deployed-app-url`. Read the [Chaos engineering](https://documenter.getpostman.com/view/1559645/SVfH1sqD) collection documentation for step-by-step instructions.
+In the Postman app, [import the template](https://learning.getpostman.com/docs/postman/launching_postman/newbutton/#templates) called `Chaos engineering` that includes the `chaosEngineering` environment, and then look for the folder called `Shut down a container`. You will need [to update the Postman environment](https://learning.getpostman.com/docs/postman/environments_and_globals/manage_environments/#editing-an-active-environment) with your `gremlin_api_key` and `your_deployed_app_url`. 
+
+Read the [Chaos engineering collection documentation](https://documenter.getpostman.com/view/1559645/SVfH1sqD) for step-by-step instructions.
 
 1. Get a list of all active containers
 1. Create a shutdown attack on a specific container
