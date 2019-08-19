@@ -1,8 +1,8 @@
-# Building resilient APIs with chaos engineering
+# Building resilient APIs with chaos engineering 🔥
 
 The example that follows supports an article published on _Better Practices_. Learn more about [Building resilient APIs with chaos engineering](https://medium.com/@joycelin.codes/chaos-d3ef238ec328).
 
-## Getting Started
+## Get Started
 
 This sample app is forked from Google's [Hipster Shop: Cloud-Native Microservices Demo Application](https://github.com/GoogleCloudPlatform/microservices-demo) - a web-based e-commerce app called **“Hipster Shop”** where users can browse items, add them to the cart, and purchase them. The application works on any Kubernetes cluster (such as a local one).
 
